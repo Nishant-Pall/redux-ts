@@ -6,6 +6,6 @@ export const useActions = () => {
     const dispatch = useDispatch();
 
     // returns action creators and bind them to dispatch
-    bindActionCreators(actionCreators, dispatch);
+    return bindActionCreators(actionCreators, dispatch);
     // kinda like { searchRepositories: dispatch(searchRepositories)}
 };
