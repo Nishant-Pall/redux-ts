@@ -1,3 +1,7 @@
+// WE HANDLE ACTIONS IN THE REDUCER AND RETURN STATES HERE
+// IT GETS INPUT AS STATES AND IT PROCESSES ACTIONS AND
+// EVENTUALLY A NEW STATE IS RETURNED
+
 import { ActionType } from "../action-types";
 import { Action } from "../actions";
 
@@ -13,6 +17,7 @@ const initialState = {
     data: [],
 };
 
+// WE ALMOST EVERYTIME USE SWITCH CASES IN REDUCERS
 const RepositoriesReducer = (
     state: RepositoriesState = initialState,
     action: Action
