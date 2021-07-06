@@ -7,6 +7,8 @@ const RepositoriesList: React.FC = () => {
     const [term, setTerm] = useState("");
     // get the searchRepositories action from the hook
     const { searchRepositories } = useActions();
+    // Using typed selector to let react-redux know the
+    // type of data we have in redux store
     const { data, error, loading } = useTypedSelector(
         (state) => state.repositories
     );
