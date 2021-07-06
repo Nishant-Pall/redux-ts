@@ -1,4 +1,5 @@
 import React from "react";
+// Provides gives us access to the redux store
 import { Provider } from "react-redux";
 import { store } from "../state";
 import RepositoriesList from "./RepositoriesList";
